@@ -6,7 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-  }
+}
   
   nav {
     position: absolute;
@@ -35,4 +35,36 @@ body {
   form input[type="submit"] {
     margin: 5px;
   }
+
+  form input[type="text"] {
+    border-radius: 20px;
+    width: 300px;
+    height: 25px;
+  }
+
+  form input[type="submit"] {
+    border-radius: 5px;
+  }
   
+  .google {
+    font-size: 7.5em;
+    margin-bottom: 10px;
+  }
+
+  .google span:nth-child(3),
+  .google span:nth-child(5) {
+    color: red;
+  }
+
+  .google span:nth-child(1),
+  .google span:nth-child(4) {
+    color: blue;
+  }
+
+  .google span:nth-child(2) {
+    color: yellow;
+  }
+
+  .google span:nth-child(6) {
+    color: green;
+  }
