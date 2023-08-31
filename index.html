@@ -16,6 +16,18 @@
     <h1 class="google"><span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></h1>
     <input type="text" name="q">
     <input type="submit" value="Google Search">
+    <a href="javascript:void(0);" id="feeling-lucky">I'm Feeling Lucky</a>
   </form>
+
+  <script>
+    const feelingLuckyLink = document.getElementById("feeling-lucky");
+    const searchInput = document.querySelector("input[name='q']");
+
+    feelingLuckyLink.addEventListener("click", () => {
+      if (searchInput.value) {
+        window.location.href = `https://www.google.com/search?q=${encodeURIComponent(searchInput.value)}&btnI`;
+      }
+    });
+  </script>
 </body>
 </html>

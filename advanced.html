@@ -3,12 +3,56 @@
     <head>
         <link rel="stylesheet" type="text/css" href="./style.css">
 
+        <style>
+            body {
+              font-family: Arial, sans-serif;
+            }
+            .form-container {
+              max-width: 500px;
+              margin: 0 auto;
+              padding: 20px;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+              box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            }
+            .google {
+              font-size: 24px;
+              font-weight: bold;
+            }
+            input[type="text"] {
+              width: 100%;
+              padding: 10px;
+              margin-bottom: 10px;
+              border: 1px solid #ccc;
+              border-radius: 3px;
+            }
+            input[type="submit"] {
+              background-color: #4285f4;
+              color: #fff;
+              border: none;
+              padding: 10px 20px;
+              border-radius: 3px;
+              cursor: pointer;
+            }
+            input[type="submit"]:hover {
+              background-color: #3367D6;
+            }
+          </style>
+
         <title>Advanced Search</title>
     </head>
     <body>
         <nav>
             <a href="./index.html">Home</a>
         </nav>
+        <form class="form-container" action="https://www.google.com/search">
+            <h1 class="google">Google <em>Advanced</em> Search</h1>
+            <input type="text" name="as_q" placeholder="all these words">
+            <input type="text" name="as_epq" placeholder="this exact word or phrase">
+            <input type="text" name="as_oq" placeholder="any of these words">
+            <input type="text" name="as_eq" placeholder="none of these words">
+            <input type="submit" value="Google Search">
+        </form>
     </body>
 </html>
 
